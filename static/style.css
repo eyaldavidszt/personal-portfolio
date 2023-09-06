@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #313866;
+  color: #fe7be5;
+  text-shadow: 0 0 2.5px #fe7be5;
+  font-family: Roboto;
+}
+
 .img-container {
   display: inline-block;
   position: relative;
@@ -5,4 +17,30 @@
 
 .name {
   position: absolute;
+  font-size: clamp(1rem, 3vw, 2rem);
+  text-align: center;
+}
+
+header {
+  margin-top: 24px;
+  position: relative;
+}
+
+.about {
+  max-width: 600px;
+  display: inline-block;
+}
+
+@media (min-width: 1200px) {
+  .name {
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
