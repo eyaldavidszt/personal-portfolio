@@ -31,6 +31,10 @@ header {
   display: inline-block;
 }
 
+.pfp {
+  filter: drop-shadow(0 0 0.5rem #504099);
+}
+
 @media (min-width: 1200px) {
   .name {
     bottom: 8px;
@@ -40,8 +44,8 @@ header {
   }
   .about {
     position: absolute;
-
     top: 50%;
     transform: translateY(-50%);
+    padding: 0.5rem 1rem;
   }
 }
