@@ -19,6 +19,7 @@ body {
   position: absolute;
   font-size: clamp(1rem, 3vw, 2rem);
   text-align: center;
+  z-index: 1;
 }
 
 header {
