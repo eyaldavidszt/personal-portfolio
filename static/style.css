@@ -105,6 +105,9 @@ header {
     align-self: center;
     margin-bottom: 2rem;
   }
+  picture img {
+    max-width: 100%;
+  }
 }
 
 h2 {
