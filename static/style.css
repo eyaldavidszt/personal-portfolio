@@ -34,8 +34,9 @@ header {
 @media (min-width: 1200px) {
   .name {
     bottom: 8px;
-    left: 50%;
     transform: translateX(-50%);
+    left: 50%;
+    white-space: nowrap;
   }
   .about {
     position: absolute;
