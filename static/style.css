@@ -27,24 +27,52 @@ body {
 
 header {
   position: relative;
-  display: flex;
-  align-items: center;
+  margin-top: 2rem;
 }
 
 .about {
-  width: 600px;
+  max-width: 600px;
   display: inline-block;
 }
-
 .pfp {
   filter: drop-shadow(0 0 0.5rem #504099);
 }
 
 @media (min-width: 1200px) {
+  .pfp {
+    min-width: 300px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+  }
   .name {
     bottom: 8px;
     transform: translateX(-50%);
     left: 50%;
     white-space: nowrap;
+  }
+  .about {
+    margin-bottom: 1rem;
+    padding: 2rem 4rem;
+    box-shadow: 5px 5px 5px black;
+  }
+  .about-me {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1199px) {
+  .name {
+    left: 85%;
+    white-space: nowrap;
+  }
+  .img-container {
+    float: left;
+    margin-right: 2rem;
+  }
+  .about {
+    display: block;
+    margin-top: 3rem;
   }
 }
